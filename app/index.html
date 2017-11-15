@@ -24,30 +24,95 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<style>
+	html { background-color: #fff; }
+	body {
+		position: relative;
+		opacity: 0; overflow-x: hidden;
+	}
+	ul.nav-pills {
+		top: 80px;
+		position: fixed;
+	}
+	div.col-sm-9 div {
+		height: 100%;
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: 810px) {
+		#section1, #section2, #section3  {
+			margin-left: 150px;
+		}
+	}
+	</style>
 
 </head>
 
-<body>
-
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-sm-8 col-sm-offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова, силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни это, первую переулка правилами?</p>
-				<p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты? Предупреждал повстречался, но которое!</p>
-				<p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая предложения рот скатился.</p>
-
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+<div class="container newspaper">
+	<div class="row">
+		<nav class="col-sm-3" id="myScrollspy">
+			<ul class="nav nav-pills nav-stacked">
+				<img class="logo" src="/img/logo1.png" alt="">
+				<li class="active"><a href="#section1">ГЛАВНАЯ</a></li>
+				<li><a href="#section2">СЕМЕНА</a></li>
+				<li><a href="#section3">СЗР и УДОБРЕНИЯ</a></li>
+				<li><a href="#section4">ЖИВОТНОВОДСТВО</a></li>
+				<li><a href="#section5">УСЛУГИ И РЕМОНТ</a></li>
+				<li><a href="#section6">ТЕХНИКА</a></li>
+				<li><a href="#section7">ОБОРУДОВАНИЕ</a></li>
+				<li><a href="#section8">ЗАПЧАСТИ</a></li>
+				<li><a href="#section9">РАЗНОЕ</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">СОБЫТИЯ, ОБЗОРЫ<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#section10">Агрособытия</a></li>
+						<li><a href="#section11">Агро обзор</a></li>
+						<li><a href="#section12">Видео обзор</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">ЧИТАТЕЛЮ<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#section13">Страница читателя</a></li>
+						<li><a href="#section14">Агро Вопрос</a></li>
+						<li><a href="#section15">Навигация по номеру</a></li>
+						<li><a href="#section16">Наши контакты</a></li>
+						<li><a href="#section17">Конкурс для читателей</a></li>
+					</ul>
+				</li>
+				<li class="download"><a class="btn-success" href="#section18">&#x2709; Скачать газету</a></li>
+				<li class="arhiv"><a class="btn-danger" href="#section19">&#xe056; Архив газеты</a></li>
+			</ul>
+		</nav>
+		<div class="col-sm-9 wrapper-np text-center">
+			<div id="section1">
+				<img class="img-responsive" src="img/home.jpg" alt="">
 			</div>
-			
+			<div id="section2">
+				<h2>Семена</h2>
+				<img class="img-responsive" src="img/1.jpg" alt="">
+				<img class="img-responsive" src="img/1.jpg" alt="">
+				<img class="img-responsive" src="img/1.jpg" alt="">
+			</div>
+			<div id="section3">
+				<img class="img-responsive" src="img/3.jpg" alt="">
+				<!--<img class="img-responsive" src="img/4.jpg" alt="">-->
+			</div>
+			<div id="section4">
+				<img class="img-responsive" src="img/5.jpg" alt="">
+				<!--<img class="img-responsive" src="img/6.jpg" alt="">-->
+			</div>
 		</div>
-
 	</div>
+</div>
+
 	
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
