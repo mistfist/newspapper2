@@ -1101,39 +1101,52 @@
                                                     <div class="col-sm-6">
                                                         
 <div class="bg-contacts text-left">
+<form action="mail.php" method="post">
 <div class="form-group has-success has-feedback">
   <div class="input-group">
     <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" placeholder="Введите Имя">
+    <input type="text" class="form-control" name="name" id="InputName" placeholder="Введите Имя">
   </div>
 </div>
 
 <div class="form-group has-success has-feedback">
   <div class="input-group">
     <span class="input-group-addon">☎</span>
-    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" placeholder="Введите e-mail адрес">
+    <input type="tel" class="form-control" id="Inputtel" name="telephone" placeholder="Введите Ваш телефон">
   </div>
 </div>
 <div class="form-group has-success has-feedback">
   <div class="input-group">
     <span class="input-group-addon">@</span>
-    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" placeholder="Введите e-mail адрес">
+    <input type="email" class="form-control" id="InputEmail" name="email" placeholder="Введите e-mail адрес" required>
   </div>
 </div>
+
+<!-- <div class="form-group has-success has-feedback">
+    <label for="InputReal">5 + 10? (Введите правильный ответ)</label>
+    <div class="input-group">
+        <input type="text" name="human" class="form-control" name="InputReal" id="InputReal" required>
+        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+    </div>
+</div> -->
+
 <div class="form-group has-success has-feedback">
-<textarea class="form-control" rows="3" placeholder="Введите Ваше сообщение"></textarea>
+<textarea class="form-control" name="message" id="InputMessage" rows="3" placeholder="Введите Ваше сообщение" required></textarea>
 </div>
 <div class="form-group has-success has-feedback">
 <button type="submit" class="btn btn-default text-right">Отправить</button>
 </div>
+</form>
+
 </div>
 
 
                                                     </div>
-<div class="row">
-            <div id="map"></div>
+<div class="row"></div>
+<div id="footer-maps">
+    <h3>Как нас найти</h3>
+    <div id="map"></div>
 </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -1160,6 +1173,27 @@
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                         <script src="js/scripts.min.js"></script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0wggO8SbhKxO9--A8PDf6iPUBORS1kx4&callback=initMap"></script>
+                            <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeY6EGwvbgSkmvgWAC92PsN_ORiMCIE74&callback=initMap">
+    </script>
+
+
+    <script>
+function initMap() {
+    var uluru = {lat: 46.966404, lng: 31.989216};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru,
+    disableDefaultUI: true,
+  styles: [{"elementType":"geometry","stylers":[{"color":"#242f3e"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#746855"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#242f3e"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#d59563"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#d59563"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#263c3f"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#6b9a76"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#38414e"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#212a37"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#9ca5b3"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#746855"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#1f2835"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#f3d19c"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#2f3948"}]},{"featureType":"transit.station","elementType":"labels.text.fill","stylers":[{"color":"#d59563"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#17263c"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#515c6d"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#17263c"}]}]
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: 'img/map-marker.png'
+    });
+}
+    </script>
+
                     </body>
                     </html>
