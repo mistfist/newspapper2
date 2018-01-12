@@ -23,6 +23,7 @@
 	color: #666
 	opacity: 1
 
+
 *:-ms-input-placeholder
 	color: #666
 	opacity: 1
@@ -33,7 +34,7 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
 	color: #666
-
+	
 html, body
 	height: 100%
 
@@ -756,6 +757,69 @@ select#ddmenu_name
 		width: 100%
 		height: 400px
 		background-color: grey
+
+.banner-block
+	-moz-animation: bounce 3s infinite
+	-webkit-animation: bounce 3s infinite
+	animation: bounce 3s infinite
+	@-moz-keyframes bounce
+		0%,20%,50%,80%,100%
+			-moz-transform: translateX(0)
+			transform: translateX(0)
+
+		40%
+			-moz-transform: translateX(-10px)
+			transform: translateX(-30px)
+
+		60%
+			-moz-transform: translateX(-15px)
+			transform: translateX(-15px)
+
+
+	@-webkit-keyframes bounce
+		0%,20%,50%,80%,100%
+			-webkit-transform: translateX(0)
+			transform: translateX(0)
+		40%
+			-webkit-transform: translateX(-30px)
+			transform: translateX(-30px)
+
+		60%
+			-webkit-transform: translateX(-15px)
+			transform: translateX(-15px)
+
+	@keyframes bounce
+		0%,20%,50%,80%,100%
+			-moz-transform: translateX(0)
+			-ms-transform: translateX(0)
+			-webkit-transform: translateX(0)
+			transform: translateX(0)
+
+		40%
+			-moz-transform: translateX(-30px)
+			-ms-transform: translateX(-30px)
+			-webkit-transform: translateX(-30px)
+			transform: translateX(-30px)
+
+		60%
+			-moz-transform: translateX(-15px)
+			-ms-transform: translateX(-15px)
+			-webkit-transform: translateX(-15px)
+			transform: translateX(-15px)
+
+.wrapper-banner
+	position: relative
+	margin-left: 833px
+	margin-top: -212px
+	min-height: 218px
+	background: #ffffff
+	img
+		position: absolute
+		margin: auto
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
 
 
 @import "media" // Всегда в конце
