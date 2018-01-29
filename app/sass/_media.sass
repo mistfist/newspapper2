@@ -48,7 +48,7 @@
 	#videoobzor
 		.colontitul
 			.name-rubrik
-				font-size: 22px
+				font-size: 18px
 	
 	#agroobzor,
 	#agrosobitie,
@@ -103,11 +103,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
 	.newspaper
 		h1
 			font-size: 32px
@@ -116,7 +111,8 @@
 
 	.colontitul .name-rubrik
 		padding-left: 10px
-		font-size: 20px
+		font-size: 18px !important
+
 
 	.colontitul .logo-nomer
 		display: none
@@ -128,8 +124,7 @@
 			width: 50%
 
 	.colontitul .nomer
-		font-size: 20px
-
+		font-size: 18px
 
 	#tovar,
 	#semena,
@@ -144,6 +139,21 @@
 	#stati,
 	#events
 		margin-left: 0px
+		.line
+			width: 35%
+			margin-top: -2px
+
+	#agro-1,
+	#agrosobitie1,
+	#stati
+		.wrapper
+			padding: .4em 20px
+			margin-top: 0px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
