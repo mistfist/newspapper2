@@ -86,6 +86,9 @@
 	.mobile-menu
 		display: block
 
+	.wrapper-np
+		margin-top: 100px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	#reader-page
@@ -97,8 +100,6 @@
 		.col-sm-10
 			padding-left: 15px
 
-	.wrapper-np
-		margin-top: 100px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -110,9 +111,26 @@
 	.newspaper
 		h1
 			font-size: 32px
-			padding: 0px
-			margin: 0px
-	
+			padding: 0px !important
+			margin: 0px !important
+
+	.colontitul .name-rubrik
+		padding-left: 10px
+		font-size: 20px
+
+	.colontitul .logo-nomer
+		display: none
+
+	.wrapper-page
+		margin-left: 0px
+		.line
+			float: right
+			width: 50%
+
+	.colontitul .nomer
+		font-size: 20px
+
+
 	#tovar,
 	#semena,
 	#szr,
@@ -126,24 +144,6 @@
 	#stati,
 	#events
 		margin-left: 0px
-
-	#reader-page,
-	#new
-		.colontitul
-			.name-rubrik
-				padding-left: 9px
-			.logo-nomer
-				display: none
-			.line
-				margin-right: 7px
-				margin-top: 4px
-				float: right
-			.nomer
-				font-size: 20px
-
-	.wrapper-page
-		margin-left: 0px
-
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
