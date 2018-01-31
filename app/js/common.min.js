@@ -1,6 +1,5 @@
 $(function() {
 
-
 // $(window).scroll(function(){ 
 //   if($(window).scrollTop()>1500){ 
 //     $('.post').show() 
@@ -16,7 +15,7 @@ $(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Спасибо, Ваше сообщение отправлено!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -24,6 +23,7 @@ $(function() {
 		});
 		return false;
 	});
+
 
 
 // 	$(document).ready(function() {
@@ -48,5 +48,4 @@ $(function() {
 // 				});
 // 		};
 // 	})(jQuery);
-	
 });
