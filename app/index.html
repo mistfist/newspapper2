@@ -32,125 +32,22 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 <style>
-/*start menu style*/
-#menuToggle
-{
-	display: block;
-	position: relative;
-	left: 0px;
-	z-index: 1;
-	-webkit-user-select: none;
-	user-select: none;
-	top: 4px;
-
-}
-
-#menuToggle input
-{
-	display: block;
-	width: 40px;
-	height: 32px;
-	position: absolute;
-	top: -7px;
-	cursor: pointer;
-	opacity: 0; /* hide this */
-	z-index: 2; /* and place it over the hamburger */
-	-webkit-touch-callout: none;
-}
-
-#menuToggle span
-{
-	display: block;
-	width: 33px;
-	height: 2px;
-	margin-bottom: 7px;
-	position: relative;
-	background: black;
-	border-radius: 3px;
-	z-index: 1;
-	transform-origin: 4px 0px;
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-	transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-	transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-	opacity: 1;
-	transform: rotate(45deg) translate(-2px, -1px);
-	background: #232323;
-}
-
+    /* mobile menu */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
 	opacity: 0;
 	transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
 	opacity: 1;
 	transform: rotate(-45deg) translate(0, -1px);
 }
-
-#menu
-{
-    overflow: scroll;
-    position: fixed;
-    min-width: 320px;
-    width: 100%;
-    margin: -128px 0px 0 -215px;
-    padding-left: 24px;
-    padding-top: 125px;
-    padding-right: 135px;
-    background-image: url(img/bg-mobile.png);
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    height: 100%;
-}
-#menu li a {
-color:#165f32 !important;
-font-weight: 600;
-padding-left: 8px;
-border-left: 4px solid #b7b3b6;
-text-decoration: none;
-text-transform: initial;
-font-size: 15px;
-}
-
-#menu li a:hover {
-border-left: 4px solid #165f32;
-}
-#menu li
-{
-	padding-top: 10px;
-	font-size: 18px;
-    border-bottom: 2px solid #fffefebf;
-    padding-bottom: 4px;
-    text-transform: uppercase;
-}
-
 #menuToggle input:checked ~ ul
 {
 	transform: scale(1.0, 1.0);
 	opacity: 1;
 }
-
-/*finish menu style*/
 </style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -359,7 +256,7 @@ border-left: 4px solid #165f32;
                             <div id="semena11"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv11.jpg" alt=""></div>
                         </div>
 <!-- Прайсы                        -->
-                                <div class="wrapper-page text-left">
+                                <!-- <div class="wrapper-page text-left">
                                     <div class="colontitul">
                                         <p class="name-rubrik">Прайсы семян</p>
                                         <div class="line"><img src="img/line.png" alt="line">
@@ -397,14 +294,7 @@ border-left: 4px solid #165f32;
                                                     <div class="col-sm-11 col-xs-11"><a href="pdf/НВФ Хелп-Агро_прайс.pdf">НВФ Хелп-Агро_прайс</a></div>
                                                 </div>
                                                 </div>
-                                    </div>
-                                
-                            
-                            
-
-
-
-
+                                    </div> -->
                     </div>
                     <div id="szr">
                         <h2>CЗР И УДОБРЕНИЯ</h2>
@@ -1322,7 +1212,7 @@ border-left: 4px solid #165f32;
                                                         <span> 54017, Украина, г. Николаев,<br> ул.&nbsp;Соборная 12 Б, офис 405</span> 
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        
+                                                        <!-- Форма обратной связи -->
                                                         <div class="bg-contacts text-left">
                                                             <form id="mail-form" method="post">
 
@@ -1385,38 +1275,58 @@ border-left: 4px solid #165f32;
                             </div>
                         </div>
 
+<!-- Модальное Окно  -->
+	<div id="overlay">
+		<div class="popup" style="text-align: center;">
+<h3 style="margin-top:30px;">Для получения прайса <br>оставьте свой email</h3>
+			<!-- Форма обратной связи с POPUp -->
+            <div class="bg-contacts text-left">
+                    <form id="mail-form" method="post">
+                    <!-- Hidden Required Fields -->
+<input type="hidden" name="project_name" value="Интерактивный номер газеты АграрНик">
+<input type="hidden" name="admin_email" value="vitokud1@gmail.com">
+<input type="hidden" name="form_subject" value="Контактная форма">
+<!-- END Hidden Required Fields -->
+                        <div class="form-group has-success has-feedback">
+                          <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control" name="Имя" id="InputName" placeholder="Введите Имя">
+                        </div>
+                    </div>
+
+                <div class="form-group has-success has-feedback">
+                  <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="email" class="form-control" id="InputEmail" name="Email" placeholder="Введите e-mail адрес" required>
+                </div>
+            </div>
+
+
+<div class="form-group has-success has-feedback">
+<button type="submit" class="btn btn-default text-right">Отправить</button>
+</div>
+</form>
+</div>
+
+			<button class="close1" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+		</div>
+    </div>
+    
 <!-- CSS theme files
 	============================================ -->
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-      <!-- JS Libs & Plugins
+<!-- JS Libs & Plugins
   ============================================ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="libs/waypoint.js"></script>
     <script async 
     defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeY6EGwvbgSkmvgWAC92PsN_ORiMCIE74&callback=initMap"></script>
     <!-- JS theme files
   ============================================ -->
-<script src="js/scripts.min.js"></script>
-
-                    <script>
-                        function initMap() {
-                            var uluru = {lat: 46.966404, lng: 31.989216};
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                              zoom: 15,
-                              center: uluru,
-                              disableDefaultUI: true,
-                              styles: [{"elementType":"geometry","stylers":[{"color":"#242f3e"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#746855"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#242f3e"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#d59563"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#d59563"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#263c3f"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#6b9a76"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#38414e"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#212a37"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#9ca5b3"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#746855"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#1f2835"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#f3d19c"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#2f3948"}]},{"featureType":"transit.station","elementType":"labels.text.fill","stylers":[{"color":"#d59563"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#17263c"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#515c6d"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#17263c"}]}]
-                          });
-                            var marker = new google.maps.Marker({
-                              position: uluru,
-                              map: map,
-                              icon: 'img/map-marker.png'
-                          });
-                        }
-                    </script>
                 </body>
                 </html>
