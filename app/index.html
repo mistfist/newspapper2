@@ -121,7 +121,6 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     height: 100%;
-    min-height: 800px;
 }
 #menu li a {
 color:#165f32 !important;
@@ -159,7 +158,7 @@ border-left: 4px solid #165f32;
     <!-- - - - - - - - - - - - - Mobile menu - - - - - - - - - - - - - - - -->
     <div class="container-fluid mobile-menu">
         <div class="row">
-            <div class="col-xs-10"><img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип"></div>
+            <div class="col-xs-10"><img class="logo-main img-responsive" src="img/logo.svg" alt="логотип"></div>
             <div class="col-xs-2">
                 <nav role="navigation">
                     <div id="menuToggle">
@@ -197,9 +196,9 @@ border-left: 4px solid #165f32;
         <div class="row">
             <nav class="col-md-3 hidden-xs hidden-sm" id="myScrollspy">
                 <ul class="nav nav-pills nav-stacked">
-                    <p class="content-nav">Содержание</p>
+                    <!-- <p class="content-nav">Содержание</p> -->
+                    <img class="logo-main img-responsive" src="img/logo.svg" alt="логотип">
                     <span>ЭЛЕКТРОННАЯ ВЕРСИЯ</span>
-                    <p class="name-nav">Навигация по номеру</p>
                     <li class="active"><a class="category" href="#tovar">ТОВАРЫ, УСЛУГИ</a></li>
                     <li><a href="#semena">Семена</a></li>
                     <li><a href="#szr">Сзр и удобрения</a></li>
@@ -222,17 +221,18 @@ border-left: 4px solid #165f32;
                     <li><a href="#agrovopros">АгроВопрос</a></li>
                     <!-- <li><a href="#navigation">Навигация по номеру</a></li> -->
                     <li><a href="#contacts">Наши контакты</a></li>
+                    <!-- <p class="name-nav">Навигация по номеру</p> -->
                     <!-- <li><a href="#conkurs">Конкурс для читателей</a></li> -->
-                    <li>
-                        <ul class="last-list">
-                            <li><a href="https://agrarnik.com/" title="Вернуться на сайт" target="_blank"><i class="fa fa-reply"></i></a></li>
-                            <li><a href="https://agrarnik.com/web/viewer.html?file=agrarnik20_interactiv.pdf" title="скачать PDF" target="_blank"><i class="fa fa-download"></i></a></li>
-                            <li><a href="https://agrarnik.com/index.php?option=com_sppagebuilder&view=page&id=7&Itemid=433" title="Посмотреть архив номеров" target="_blank"><i class="fa fa-file-text"></i></a></li>
-                        </ul>
                     </ul>
                 </nav>
                 <div class="col-md-9 col-sm-12 col-xs-12 wrapper-np text-center">
                     <div id="semena">
+                            <ul class="last-list visible-lg">
+                                    <li><a href="https://agrarnik.com/" title="Перейти на сайт" target="_blank"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="https://agrarnik.com/web/viewer.html?file=agrarnik20_interactiv.pdf" title="скачать PDF" target="_blank"><i class="fa fa-download"></i></a></li>
+                                    <li><a href="https://agrarnik.com/index.php?option=com_sppagebuilder&view=page&id=7&Itemid=433" title="Посмотреть архив номеров" target="_blank"><i class="fa fa-file-text"></i></a></li>
+                                    <li><a href="https://www.facebook.com/AgrarNikwelcome/" title="Перейти на Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                            </ul>
                         <h1>ТОВАРЫ И УСЛУГИ</h1>
                         <h2>Семена</h2>
                         <div class="wrapper-page">
@@ -241,7 +241,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="semena1"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv.jpg" alt="">
 
@@ -253,14 +253,17 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="semena2">
 <!--Баннер для семян старт-->
 <div class="wrapper-banner visible-lg">
-<a href="https://agrarnik.com/"><img class="banner-block bounceInRight" src="img/banner/1.jpg" alt="кукурузы F1"/></a>
+<a href="https://agrarnik.com/"><img class="banner-block" src="img/banner/1.jpg" alt="кукурузы F1"/></a>
 </div>
 <!--Баннер для семян финиш-->
+
+
+
                                 <img class="img-responsive" src="img/20/semena/agrarnik20_interactiv2.jpg" alt="">
                             </div>
                         </div>
@@ -270,7 +273,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="semena3"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv3.jpg" alt="">
                                 </div>
@@ -281,7 +284,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="semena4"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv4.jpg" alt=""></div>
                         </div>
@@ -291,7 +294,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="semena5"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv5.jpg" alt=""></div>
                         </div>
@@ -301,7 +304,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
                             <div id="semena6"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv6.jpg" alt=""></div>
                         </div>
@@ -311,7 +314,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
                             <div id="semena7"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv7.jpg" alt=""></div>
                         </div>
@@ -321,7 +324,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
                             <div id="semena8"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv8.jpg" alt=""></div>
                         </div>
@@ -331,7 +334,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
                             <div id="semena9"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv9.jpg" alt=""></div>
                         </div>
@@ -341,7 +344,7 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
                             <div id="semena10"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv10.jpg" alt=""></div>
                         </div>
@@ -351,10 +354,57 @@ border-left: 4px solid #165f32;
                                 <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
                             <div id="semena11"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv11.jpg" alt=""></div>
                         </div>
+<!-- Прайсы                        -->
+                                <div class="wrapper-page text-left">
+                                    <div class="colontitul">
+                                        <p class="name-rubrik">Прайсы семян</p>
+                                        <div class="line"><img src="img/line.png" alt="line">
+                                            <p class="nomer">№20 (307)</p>
+                                        </div>
+                                        <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
+                                    </div>
+                                    <div id="price">
+                                            <div class="row">
+                                                    <div class="col-sm-1 col-xs-1 text-right"><i class="fa fa-file-pdf-o"></i></div>
+                                                    <div class="col-sm-11 col-xs-11"><a href="pdf/ВНІС_прайс.pdf" target="blank">Всеукраїнський науковий інститут селекції</a></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-1 col-xs-1 text-right"><i class="fa fa-file-pdf-o"></i></div>
+                                                    <div class="col-sm-11 col-xs-11"><a href="pdf/ДП Эксперементальна база Дачна_прайс1.pdf">ДП Эксперементальна база Дачна_прайс1</a></div>
+                                                </div>
+            
+                                                <div class="row">
+                                                    <div class="col-sm-1 text-right"><i class="fa fa-file-pdf-o"></i></div>
+                                                    <div class="col-sm-11 col-xs-11"><a href="pdf/ДП Эксперементальна база Дачна_прайс2.pdf">ДП Эксперементальна база Дачна_прайс2</a></div>
+                                                </div>
+            
+                                                <div class="row">
+                                                    <div class="col-sm-1 text-right"><i class="fa fa-file-pdf-o"></i></div>
+                                                    <div class="col-sm-11 col-xs-11"><a href="pdf/Насіннева компанія Гран_прайс.pdf">Насіннева компанія Гран_прайс</a></div>
+                                                </div>
+            
+                                                <div class="row">
+                                                    <div class="col-sm-1 text-right"><i class="fa fa-file-pdf-o"></i></div>
+                                                    <div class="col-sm-11 col-xs-11"><a href="pdf/НВП УкрЕлітЦентр_прайс.pdf">НВП УкрЕлітЦентр_прайс</a></div>
+                                                </div>
+            
+                                                <div class="row v1">
+                                                    <div class="col-sm-1 text-right"><i class="fa fa-file-pdf-o"></i></div>
+                                                    <div class="col-sm-11 col-xs-11"><a href="pdf/НВФ Хелп-Агро_прайс.pdf">НВФ Хелп-Агро_прайс</a></div>
+                                                </div>
+                                                </div>
+                                    </div>
+                                
+                            
+                            
+
+
+
+
                     </div>
                     <div id="szr">
                         <h2>CЗР И УДОБРЕНИЯ</h2>
@@ -365,7 +415,7 @@ border-left: 4px solid #165f32;
                                     <img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="логотип">
+                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="szr1"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv.jpg" alt="">
                             </div>
@@ -377,7 +427,7 @@ border-left: 4px solid #165f32;
                                     <img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="szr2"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv2.jpg" alt=""></div>
                             </div>
@@ -385,7 +435,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="szr3"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv3.jpg" alt=""></div>
                             </div>
@@ -393,7 +443,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="szr4"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv4.jpg" alt=""></div>
                             </div>
@@ -401,7 +451,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="szr5"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv5.jpg" alt=""></div>
                             </div>
@@ -412,7 +462,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ЖИВОТНОВОДСТВО</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="zhiv1"><img class="img-responsive" src="img/20/zhiv/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -423,7 +473,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">УСЛУГИ И РЕМОНТ</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="uslugi1"><img class="img-responsive" src="img/20/uslugi/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -431,7 +481,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">УСЛУГИ И РЕМОНТ</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="uslugi2"><img class="img-responsive" src="img/20/uslugi/agrarnik20_interactiv2.jpg" alt=""></div>
                             </div>
@@ -439,7 +489,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">УСЛУГИ И РЕМОНТ</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="uslugi3"><img class="img-responsive" src="img/20/uslugi/agrarnik20_interactiv3.jpg" alt=""></div>
                             </div>
@@ -450,7 +500,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika1"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -458,7 +508,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika2"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv2.jpg" alt=""></div>
                             </div>
@@ -466,7 +516,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika3"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv3.jpg" alt=""></div>
                             </div>
@@ -474,7 +524,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika4"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv4.jpg" alt=""></div>
                             </div>
@@ -482,7 +532,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika5"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv5.jpg" alt=""></div>
                             </div>
@@ -490,7 +540,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika6"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv6.jpg" alt=""></div>
                             </div>
@@ -498,7 +548,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika7"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv7.jpg" alt=""></div>
                             </div>
@@ -506,7 +556,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika8"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv8.jpg" alt=""></div>
                             </div>
@@ -514,7 +564,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika9"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv9.jpg" alt=""></div>
                             </div>
@@ -522,7 +572,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika10"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv10.jpg" alt=""></div>
                             </div>
@@ -530,7 +580,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika11"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv11.jpg" alt=""></div>
                             </div>
@@ -538,7 +588,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika12"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv12.jpg" alt=""></div>
                             </div>
@@ -546,7 +596,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika13"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv13.jpg" alt=""></div>
                             </div>
@@ -554,7 +604,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika14"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv14.jpg" alt=""></div>
                             </div>
@@ -562,7 +612,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika15"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv15.jpg" alt=""></div>
                             </div>
@@ -570,7 +620,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika16"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv16.jpg" alt=""></div>
                             </div>
@@ -578,7 +628,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika17"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv17.jpg" alt=""></div>
                             </div>
@@ -586,7 +636,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika18"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv18.jpg" alt=""></div>
                             </div>
@@ -594,7 +644,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika19"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv19.jpg" alt=""></div>
                             </div>
@@ -602,7 +652,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika20"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv20.jpg" alt="Логотип"></div>
                             </div>
@@ -610,7 +660,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
                                 <div id="tehnika21"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv21.jpg" alt="Логотип"></div>
                             </div>
@@ -618,7 +668,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika22"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv22.jpg" alt="Номер"></div>
                             </div>
@@ -626,7 +676,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika23"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv23.jpg" alt="Номер"></div>
                             </div>
@@ -634,7 +684,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika24"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv24.jpg" alt="Номер"></div>
                             </div>
@@ -642,7 +692,7 @@ border-left: 4px solid #165f32;
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 
                                 </div>
                                 <div id="tehnika25"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv25.jpg" alt=""></div>
@@ -653,7 +703,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="tehnika26"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv26.jpg" alt=""></div>
                             </div>
@@ -666,7 +716,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="oborudovanie1"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -676,7 +726,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="oborudovanie2"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv2.jpg" alt=""></div>
                             </div>
@@ -686,7 +736,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="oborudovanie3"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv3.jpg" alt=""></div>
                             </div>
@@ -696,7 +746,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                 </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="oborudovanie4"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv4.jpg" alt=""></div>
                             </div>
@@ -706,7 +756,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                     <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="oborudovanie6"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv5.jpg" alt=""></div>
                             </div>
@@ -719,7 +769,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="zapchasti1"><img class="img-responsive" src="img/20/zapchasti/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -729,7 +779,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="zapchasti2"><img class="img-responsive" src="img/20/zapchasti/agrarnik20_interactiv2.jpg" alt=""></div>
                             </div>
@@ -739,7 +789,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="zapchasti3"><img class="img-responsive" src="img/20/zapchasti/agrarnik20_interactiv3.jpg" alt=""></div>
                             </div>
@@ -752,7 +802,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="raznoe1"><img class="img-responsive" src="img/20/raznoe/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -762,7 +812,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="raznoe2"><img class="img-responsive" src="img/20/raznoe/agrarnik20_interactiv1.jpg" alt=""></div>
                             </div>
@@ -772,7 +822,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="raznoe3"><img class="img-responsive" src="img/20/raznoe/agrarnik20_interactiv2.jpg" alt=""></div>
                             </div>
@@ -785,7 +835,7 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="new1"><img class="img-responsive" src="img/20/new/agrarnik20_interactiv.jpg" alt=""></div>
                             </div>
@@ -798,57 +848,58 @@ border-left: 4px solid #165f32;
                                     <div class="line"><img src="img/line.png" alt="line">
                                         <p class="nomer">№20 (307)</p>
                                     </div>
-                                    <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
                                 <div id="new1">
+                                    <div class="wrapper">Архив номеров</div>
+                                        <div class="row">
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <form name="blah_blah">
+                                                        <select class="form-control" name="ddmenu_name" id="ddmenu_name" style="width: 90% !important;" onChange="window.open(ddmenu_name.value,'newtab')">
+                                                            <option value="first_option_name" selected>Выберите рубрику</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=60:rastenievodstvo&Itemid=434">Растениеводство</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=61:zhivotnovodstvo&Itemid=434">Животноводство</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=62:selkhoztekhnika-i-oborudovanie&Itemid=434">Сельхозтехника и оборудование</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=63:khranenie-i-pererabotka&Itemid=434">Хранение и переработка</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=64:na-zametku-fermeru&Itemid=434">На заметку фермеру</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=65:obzor-agrarnogo-rynka&Itemid=434">Обзор аграрного рынка</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=67:pravovoj-obzor&Itemid=434">Правовой обзор</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=68:novosti-sobytiya-kommentarii&Itemid=434">Новости, события, комментарии</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=69:ot-redaktsii&Itemid=434">От редакции</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <form name="blah_blah">
+                                                        <select class="form-control" name="ddmenu_name" id="ddmenu_name" style="width: 90% !important;" onChange="window.open(ddmenu_name.value,'newtab')">
+                                                            <option value="first_option_name" selected>Выберите номер</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=22">2017, №22</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=21">2017, №21</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=20">2017, №20</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=19">2017, №19</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=18">2017, №18</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=17">2017, №17</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=16">2017, №16</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=15">2017, №15</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=14">2017, №14</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=13">2017, №13</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=12">2017, №12</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=11">2017, №11</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=10">2017, №10</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=9">2017, №09</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=8">2017, №08</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=7">2017, №07</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=6">2017, №06</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=5">2017, №05</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=4">2017, №04</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=3">2017, №03</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=2">2017, №02</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=1">2017, №01</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </div>
                                     <div class="wrapper">Читайте в свежем номер</div>
-                                    <div class="row">
-                                        <div class="col-sm-6 col-xs-6">
-                                            <form name="blah_blah">
-                                                <select class="form-control" name="ddmenu_name" id="ddmenu_name" style="width: 90% !important;" onChange="window.open(ddmenu_name.value,'newtab')">
-                                                    <option value="first_option_name" selected>Выберите рубрику</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=60:rastenievodstvo&Itemid=434">Растениеводство</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=61:zhivotnovodstvo&Itemid=434">Животноводство</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=62:selkhoztekhnika-i-oborudovanie&Itemid=434">Сельхозтехника и оборудование</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=63:khranenie-i-pererabotka&Itemid=434">Хранение и переработка</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=64:na-zametku-fermeru&Itemid=434">На заметку фермеру</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=65:obzor-agrarnogo-rynka&Itemid=434">Обзор аграрного рынка</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=67:pravovoj-obzor&Itemid=434">Правовой обзор</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=68:novosti-sobytiya-kommentarii&Itemid=434">Новости, события, комментарии</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_k2&view=itemlist&task=category&id=69:ot-redaktsii&Itemid=434">От редакции</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-6">
-                                            <form name="blah_blah">
-                                                <select class="form-control" name="ddmenu_name" id="ddmenu_name" style="width: 90% !important;" onChange="window.open(ddmenu_name.value,'newtab')">
-                                                    <option value="first_option_name" selected>Выберите номер</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=22">2017, №22</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=21">2017, №21</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=20">2017, №20</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=19">2017, №19</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=18">2017, №18</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=17">2017, №17</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=16">2017, №16</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=15">2017, №15</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=14">2017, №14</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=13">2017, №13</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=12">2017, №12</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=11">2017, №11</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=10">2017, №10</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=9">2017, №09</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=8">2017, №08</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=7">2017, №07</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=6">2017, №06</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=5">2017, №05</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=4">2017, №04</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=3">2017, №03</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=2">2017, №02</option>
-                                                    <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=1">2017, №01</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                    </div>
                                     <div class="row new-number">
                                         <div class="col-sm-2 col-xs-4"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4699:%D0%BC%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D1%8C-%E2%80%93-%D0%B2-%D0%B5%D0%B6%D0%B5%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&Itemid=434"><img class="img-responsive" src="https://agrarnik.com/images/308/58/original_opt.jpeg" alt=""/></a></div>
                                         <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4699:%D0%BC%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D1%8C-%E2%80%93-%D0%B2-%D0%B5%D0%B6%D0%B5%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&Itemid=434">Морковь – в ежедневный рацион питания</a></div>
@@ -891,7 +942,7 @@ border-left: 4px solid #165f32;
                                         <div class="line"><img src="img/line.png" alt="line">
                                             <p class="nomer">№20 (307)</p>
                                         </div>
-                                        <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                        <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                     </div>
                                     <div id="agrosobitie1">
                                         <div class="wrapper">Ближайшие события</div>
@@ -998,7 +1049,7 @@ border-left: 4px solid #165f32;
                                                             <div class="line"><img src="img/line.png" alt="line">
                                                             <p class="nomer">№20 (307)</p>
                                                         </div>
-                                                            <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                            <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                         </div>
                                                         <div id="agro">
                                                             <div class="row sec1-agro">
@@ -1063,7 +1114,7 @@ border-left: 4px solid #165f32;
                                                                 <div class="line"><img src="img/line.png" alt="line">
                                                                 <p class="nomer">№20 (307)</p>
                                                             </div>
-                                                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                             </div>
                                                             <div id="video1">
                                                                 <div class="row sec1-video">
@@ -1126,7 +1177,7 @@ border-left: 4px solid #165f32;
                                                                 <div class="line"><img src="img/line.png" alt="line">
                                                                 <p class="nomer">№20 (307)</p>
                                                             </div>
-                                                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                             </div>
                                                             <div class="row left-page">
                                                                 <div class="col-sm-6 hidden-xs">
@@ -1171,7 +1222,7 @@ border-left: 4px solid #165f32;
                                                         <div class="line"><img src="img/line.png" alt="line">
                                                         <p class="nomer">№20 (307)</p>
                                                     </div>
-                                                        <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                        <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                     </div>
                                                     <div id="agro-1">
 
@@ -1231,7 +1282,7 @@ border-left: 4px solid #165f32;
                                                 <p class="name-rubrik">Навигация</p>
                                                 <div class="line"><img src="img/line.png" alt="line"></div>
                                                 <p class="nomer">№20 (307)</p>
-                                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                             </div>
                                             <div id="new1"><img class="img-responsive" src="" alt=""></div>
                                         </div>
@@ -1244,7 +1295,7 @@ border-left: 4px solid #165f32;
                                                 <div class="line"><img src="img/line.png" alt="line">
                                                 <p class="nomer">№20 (307)</p>
                                             </div>
-                                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                             </div>
                                             <div id="contacts1">
                                                 <div class="row">
@@ -1325,7 +1376,7 @@ border-left: 4px solid #165f32;
                                                 <p class="name-rubrik">Конкурс</p>
                                                 <div class="line"><img src="img/line.png" alt="line"></div>
                                                 <p class="nomer">№20 (307)</p>
-                                                <img class="logo-nomer img-responsive" src="img/logo.jpg" alt="Логотип">
+                                                <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                             </div>
                                             <div id="new1"><img class="img-responsive" src="" alt=""></div>
                                         </div>
@@ -1340,8 +1391,6 @@ border-left: 4px solid #165f32;
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-
-
       <!-- JS Libs & Plugins
   ============================================ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

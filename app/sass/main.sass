@@ -52,7 +52,10 @@ body
 	overflow-x: hidden
 	opacity: 1
 	background-color: #424242 !important
+	background: url(http://192.168.1.116:3000/img/bg-wrapper.jpg)
+	background-repeat: no-repeat
 	background-attachment: fixed
+	height: 100%
 
 .img-responsive
 	display: block
@@ -66,35 +69,26 @@ p.content-nav
 	font-size: 26px
 	margin-bottom: 0
 
+.nav
+	background-color: rgba(6, 6, 6, 0.56)
+	padding: 20px !important
+
 .nav-stacked span
 	color: #c1c1c1
-	letter-spacing: 3px
+	letter-spacing: 3.5px
 
-.name-nav
-	color: #fff
-	margin-top: 30px
-	margin-bottom: 50px
-	padding-left: 45px
-	padding-top: 7px
-	padding-bottom: 7px
-	border: 1px solid #a5e174
-	position: relative
-	border-radius: 10px
-	width: 86%
-
-.name-nav:before
-	content: ''
-	background: url("../img/question.png")
-	width: 42px
-	height: 42px
-	display: block
-	left: -12px
-	position: absolute
-	top: -3px
 
 .nav-pills
-	top: 80px
+	top: 70px
 	position: fixed
+	.logo-main
+		width: 238px
+		margin-left: -6px
+		margin-bottom: 1px
+
+.mobile-menu
+	.logo-main
+		width: 150px
 
 .nav > li > a
 	padding: 1px 15px !important
@@ -134,26 +128,26 @@ hr.style14
 	background-image: -ms-linear-gradient(left,#f0f0f0,#8c8b8b,#f0f0f0)
 	background-image: -o-linear-gradient(left,#f0f0f0,#8c8b8b,#f0f0f0)
 	margin-bottom: 15px
-		margin-top: 15px
+	margin-top: 15px
 
-i.fa.fa-reply,
-i.fa.fa-file-text,
-i.fa.fa-download
-	color: #76797d
-	font-size: 42px
-	margin-top: 20px
 
 .last-list
-	padding-left: 0px
-	padding-top: 20px
-
+	margin-top: 20px
+	position: fixed
+	right: 306px
 	li
 		position: relative
-		display: inline-block
-		padding-left: 35px
+		padding-bottom: 20px
+		list-style: none
+	i.fa.fa-reply,
+	i.fa.fa-file-text,
+	i.fa.fa-download,
+	i.fa-facebook-square
+		color: #a7a5a5
+		font-size: 42px
+		&:hover
+			opacity: 0.8
 
-		&:first-child
-			padding-left: 0px
 
 .wrapper-np img
 	display: inline-block
@@ -193,7 +187,7 @@ h2
 		display: inline-block
 		float: right
 		padding-right: 32px
-		margin-top: 10px
+		width: 170px
 
 .line
 	display: inline-block
@@ -355,11 +349,11 @@ select#ddmenu_name
 					color: green
 					margin-right: 14px
 
-
-.fa-facebook-square
-	-moz-animation: rubberBand 3s infinite
-	-webkit-animation: rubberBand 3s infinite
-	animation: rubberBand 3s infinite
+.social
+	.fa-facebook-square
+		-moz-animation: rubberBand 3s infinite
+		-webkit-animation: rubberBand 3s infinite
+		animation: rubberBand 3s infinite
 
 .sec1-video
 	padding: 29px
@@ -653,7 +647,6 @@ select#ddmenu_name
 	margin-top: 10px
 	margin-bottom: 0px
 
-
 .fa-facebook-square
 	font-size: 42px !important
 	color: #55BDE5
@@ -681,14 +674,14 @@ select#ddmenu_name
 		background-color: grey
 
 .banner-block
-	-moz-animation: boubounceInRightnce 3s infinite
-	-webkit-animation: bounceInRight 3s infinite
-	animation: bounceInRight 3s infinite
+	-moz-animation: pulse 3s infinite
+	-webkit-animation: pulse 3s infinite
+	animation: pulse 3s infinite
 	
 .wrapper-banner
 	position: absolute
-	margin-left: 353px
-	margin-top: 12px
+	margin-left: 393px
+	margin-top: 16px
 	min-height: 218px
 	background: #ffffff
 	img
@@ -698,6 +691,12 @@ select#ddmenu_name
 		left: 0
 		right: 0
 		bottom: 0
+
+.wrapper-banner1
+	position: absolute
+	margin-left: 23px
+	margin-top: 16px
+	min-height: 218px
 
 .mobile-menu
 	background-color: #ffffff
@@ -710,4 +709,16 @@ select#ddmenu_name
 	z-index: 9999
 	display: none
 
+#price
+	.col-sm-1
+		.fa-file-pdf-o
+			color:#f1a434
+	.col-sm-11
+		padding-left: 0px
+		padding-bottom: 10px
+	.row
+		&:first-child
+			margin-top: 20px
+	.v1
+		padding-bottom: 20px
 @import "media" // Всегда в конце
