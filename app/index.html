@@ -13,16 +13,7 @@
 
     <!-- Mobile Specific Metas
 	================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Favicion
-	================================================== -->
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#000">
@@ -30,6 +21,18 @@
     <meta name="msapplication-navbutton-color" content="#000">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    
+    <!-- CSS theme files
+	============================================ -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 <style>
     /* mobile menu */
@@ -47,6 +50,33 @@
 {
 	transform: scale(1.0, 1.0);
 	opacity: 1;
+}
+
+
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.loader_inner {
+	background-image: url("img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
 }
 </style>
 </head>
@@ -123,6 +153,9 @@
                     </ul>
                 </nav>
                 <div class="col-md-9 col-sm-12 col-xs-12 wrapper-np text-center">
+                    <div class="wrapper-page">
+                    <div id="tovar"><img class="img-responsive" src="img/21/cover/main_interactiv.jpg" alt="Обложка номера"></div>
+                    </div>
                     <div id="semena">
                             <ul class="last-list visible-lg">
                                     <li><a href="https://agrarnik.com/" title="Перейти на сайт" target="_blank"><i class="fa fa-reply"></i></a></li>
@@ -136,131 +169,128 @@
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
-                            <div id="semena1"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv.jpg" alt="">
-
+                            <div id="semena1"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv.jpg" alt="">
                             </div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
                             <div id="semena2">
 <!--Баннер для семян старт-->
-<div class="wrapper-banner visible-lg">
+<!-- <div class="wrapper-banner visible-lg">
 <a href="https://agrarnik.com/"><img class="banner-block" src="img/banner/1.jpg" alt="кукурузы F1"/></a>
-</div>
+</div> -->
 <!--Баннер для семян финиш-->
 
-
-
-                                <img class="img-responsive" src="img/20/semena/agrarnik20_interactiv2.jpg" alt="">
+                                <img class="img-responsive" src="img/21/semena/agrarnik1_interactiv2.jpg" alt="">
                             </div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
-                            <div id="semena3"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv3.jpg" alt="">
+                            <div id="semena3"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv3.jpg" alt="">
                                 </div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
-                            <div id="semena4"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv4.jpg" alt=""></div>
+                            <div id="semena4"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv4.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
-                            <div id="semena5"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv5.jpg" alt=""></div>
+                            <div id="semena5"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv5.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
-                            <div id="semena6"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv6.jpg" alt=""></div>
+                            <div id="semena6"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv6.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
-                            <div id="semena7"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv7.jpg" alt=""></div>
+                            <div id="semena7"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv7.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
-                            <div id="semena8"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv8.jpg" alt=""></div>
+                            <div id="semena8"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv8.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
-                            <div id="semena9"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv9.jpg" alt=""></div>
+                            <div id="semena9"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv9.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
-                            <div id="semena10"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv10.jpg" alt=""></div>
+                            <div id="semena10"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv10.jpg" alt=""></div>
                         </div>
                         <div class="wrapper-page">
                             <div class="colontitul">
                                 <p class="name-rubrik">Семена</p>
                                 <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                             </div>
-                            <div id="semena11"><img class="img-responsive" src="img/20/semena/agrarnik20_interactiv11.jpg" alt=""></div>
+                            <div id="semena11"><img class="img-responsive" src="img/21/semena/agrarnik1_interactiv11.jpg" alt=""></div>
                         </div>
 <!-- Прайсы                        -->
                                 <!-- <div class="wrapper-page text-left">
                                     <div class="colontitul">
                                         <p class="name-rubrik">Прайсы семян</p>
                                         <div class="line"><img src="img/line.png" alt="line">
-                                            <p class="nomer">№20 (307)</p>
+                                            <p class="nomer">№21 (308)</p>
                                         </div>
                                         <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                     </div>
@@ -303,11 +333,11 @@
                                 <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
                                 <div class="line">
                                     <img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="логотип">
                             </div>
-                            <div id="szr1"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv.jpg" alt="">
+                            <div id="szr1"><img class="img-responsive" src="img/21/szr/agrarnik1_interactiv.jpg" alt="">
                             </div>
                         </div>
                         <div class="wrapper-page">
@@ -315,35 +345,35 @@
                                 <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
                                 <div class="line">
                                     <img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="szr2"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv2.jpg" alt=""></div>
+                                <div id="szr2"><img class="img-responsive" src="img/21/szr/agrarnik1_interactiv2.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="szr3"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv3.jpg" alt=""></div>
+                                <div id="szr3"><img class="img-responsive" src="img/21/szr/agrarnik1_interactiv3.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="szr4"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv4.jpg" alt=""></div>
+                                <div id="szr4"><img class="img-responsive" src="img/21/szr/agrarnik1_interactiv4.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">CЗР И УДОБРЕНИЯ</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="szr5"><img class="img-responsive" src="img/20/szr/agrarnik20_interactiv5.jpg" alt=""></div>
+                                <div id="szr5"><img class="img-responsive" src="img/21/szr/agrarnik1_interactiv5.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="zhiv">
@@ -351,10 +381,10 @@
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ЖИВОТНОВОДСТВО</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="zhiv1"><img class="img-responsive" src="img/20/zhiv/agrarnik20_interactiv.jpg" alt=""></div>
+                                <div id="zhiv1"><img class="img-responsive" src="img/21/zhiv/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="uslugi">
@@ -362,26 +392,10 @@
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">УСЛУГИ И РЕМОНТ</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="uslugi1"><img class="img-responsive" src="img/20/uslugi/agrarnik20_interactiv.jpg" alt=""></div>
-                            </div>
-                            <div class="wrapper-page">
-                                <div class="colontitul">
-                                    <p class="name-rubrik">УСЛУГИ И РЕМОНТ</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
-                                </div>
-                                <div id="uslugi2"><img class="img-responsive" src="img/20/uslugi/agrarnik20_interactiv2.jpg" alt=""></div>
-                            </div>
-                            <div class="wrapper-page">
-                                <div class="colontitul">
-                                    <p class="name-rubrik">УСЛУГИ И РЕМОНТ</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
-                                    <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
-                                </div>
-                                <div id="uslugi3"><img class="img-responsive" src="img/20/uslugi/agrarnik20_interactiv3.jpg" alt=""></div>
+                                <div id="uslugi1"><img class="img-responsive" src="img/21/uslugi/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="tehnika">
@@ -389,213 +403,213 @@
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika1"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv.jpg" alt=""></div>
+                                <div id="tehnika1"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika2"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv2.jpg" alt=""></div>
+                                <div id="tehnika2"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv2.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika3"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv3.jpg" alt=""></div>
+                                <div id="tehnika3"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv3.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika4"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv4.jpg" alt=""></div>
+                                <div id="tehnika4"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv4.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika5"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv5.jpg" alt=""></div>
+                                <div id="tehnika5"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv5.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika6"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv6.jpg" alt=""></div>
+                                <div id="tehnika6"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv6.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika7"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv7.jpg" alt=""></div>
+                                <div id="tehnika7"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv7.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika8"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv8.jpg" alt=""></div>
+                                <div id="tehnika8"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv8.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika9"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv9.jpg" alt=""></div>
+                                <div id="tehnika9"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv9.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika10"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv10.jpg" alt=""></div>
+                                <div id="tehnika10"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv10.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika11"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv11.jpg" alt=""></div>
+                                <div id="tehnika11"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv11.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika12"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv12.jpg" alt=""></div>
+                                <div id="tehnika12"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv12.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika13"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv13.jpg" alt=""></div>
+                                <div id="tehnika13"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv13.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika14"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv14.jpg" alt=""></div>
+                                <div id="tehnika14"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv14.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika15"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv15.jpg" alt=""></div>
+                                <div id="tehnika15"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv15.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika16"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv16.jpg" alt=""></div>
+                                <div id="tehnika16"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv16.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika17"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv17.jpg" alt=""></div>
+                                <div id="tehnika17"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv17.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika18"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv18.jpg" alt=""></div>
+                                <div id="tehnika18"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv18.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika19"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv19.jpg" alt=""></div>
+                                <div id="tehnika19"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv19.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika20"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv20.jpg" alt="Логотип"></div>
+                                <div id="tehnika20"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv20.jpg" alt="Логотип"></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="">
                                 </div>
-                                <div id="tehnika21"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv21.jpg" alt="Логотип"></div>
+                                <div id="tehnika21"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv21.jpg" alt="Логотип"></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika22"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv22.jpg" alt="Номер"></div>
+                                <div id="tehnika22"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv22.jpg" alt="Номер"></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika23"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv23.jpg" alt="Номер"></div>
+                                <div id="tehnika23"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv23.jpg" alt="Номер"></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika24"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv24.jpg" alt="Номер"></div>
+                                <div id="tehnika24"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv24.jpg" alt="Номер"></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
-                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№20 (307)</p></div>
+                                    <div class="line"><img src="img/line.png" alt="line"><p class="nomer">№21 (308)</p></div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 
                                 </div>
-                                <div id="tehnika25"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv25.jpg" alt=""></div>
+                                <div id="tehnika25"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv25.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">ТЕХНИКА</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="tehnika26"><img class="img-responsive" src="img/20/tehnika/agrarnik20_interactiv26.jpg" alt=""></div>
+                                <div id="tehnika26"><img class="img-responsive" src="img/21/tehnika/agrarnik1_interactiv26.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="oborudovanie">
@@ -604,51 +618,51 @@
                                 <div class="colontitul">
                                     <p class="name-rubrik">Оборудование</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="oborudovanie1"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv.jpg" alt=""></div>
+                                <div id="oborudovanie1"><img class="img-responsive" src="img/21/oborudovanie/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Оборудование</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="oborudovanie2"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv2.jpg" alt=""></div>
+                                <div id="oborudovanie2"><img class="img-responsive" src="img/21/oborudovanie/agrarnik1_interactiv2.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Оборудование</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="oborudovanie3"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv3.jpg" alt=""></div>
+                                <div id="oborudovanie3"><img class="img-responsive" src="img/21/oborudovanie/agrarnik1_interactiv3.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Оборудование</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                 </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="oborudovanie4"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv4.jpg" alt=""></div>
+                                <div id="oborudovanie4"><img class="img-responsive" src="img/21/oborudovanie/agrarnik1_interactiv4.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Оборудование</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                    <p class="nomer">№20 (307)</p>
+                                    <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="oborudovanie6"><img class="img-responsive" src="img/20/oborudovanie/agrarnik20_interactiv5.jpg" alt=""></div>
+                                <div id="oborudovanie6"><img class="img-responsive" src="img/21/oborudovanie/agrarnik1_interactiv5.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="zapchasti">
@@ -657,31 +671,31 @@
                                 <div class="colontitul">
                                     <p class="name-rubrik">Запчасти</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="zapchasti1"><img class="img-responsive" src="img/20/zapchasti/agrarnik20_interactiv.jpg" alt=""></div>
+                                <div id="zapchasti1"><img class="img-responsive" src="img/21/zapchasti/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Запчасти</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="zapchasti2"><img class="img-responsive" src="img/20/zapchasti/agrarnik20_interactiv2.jpg" alt=""></div>
+                                <div id="zapchasti2"><img class="img-responsive" src="img/21/zapchasti/agrarnik1_interactiv2.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Запчасти</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="zapchasti3"><img class="img-responsive" src="img/20/zapchasti/agrarnik20_interactiv3.jpg" alt=""></div>
+                                <div id="zapchasti3"><img class="img-responsive" src="img/21/zapchasti/agrarnik1_interactiv3.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="raznoe">
@@ -690,31 +704,31 @@
                                 <div class="colontitul">
                                     <p class="name-rubrik">Разное</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="raznoe1"><img class="img-responsive" src="img/20/raznoe/agrarnik20_interactiv.jpg" alt=""></div>
+                                <div id="raznoe1"><img class="img-responsive" src="img/21/raznoe/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Разное</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="raznoe2"><img class="img-responsive" src="img/20/raznoe/agrarnik20_interactiv1.jpg" alt=""></div>
+                                <div id="raznoe2"><img class="img-responsive" src="img/21/raznoe/agrarnik1_interactiv2.jpg" alt=""></div>
                             </div>
                             <div class="wrapper-page">
                                 <div class="colontitul">
                                     <p class="name-rubrik">Разное</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="raznoe3"><img class="img-responsive" src="img/20/raznoe/agrarnik20_interactiv2.jpg" alt=""></div>
+                                <div id="raznoe3"><img class="img-responsive" src="img/21/raznoe/agrarnik1_interactiv3.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="new">
@@ -723,11 +737,11 @@
                                 <div class="colontitul">
                                     <p class="name-rubrik">Новые предложения</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
-                                <div id="new1"><img class="img-responsive" src="img/20/new/agrarnik20_interactiv.jpg" alt=""></div>
+                                <div id="new1"><img class="img-responsive" src="img/21/new/agrarnik1_interactiv.jpg" alt=""></div>
                             </div>
                         </div>
                         <div id="stati">
@@ -736,7 +750,7 @@
                                 <div class="colontitul">
                                     <p class="name-rubrik">Статьи</p>
                                     <div class="line"><img src="img/line.png" alt="line">
-                                        <p class="nomer">№20 (307)</p>
+                                        <p class="nomer">№21 (308)</p>
                                     </div>
                                     <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                 </div>
@@ -763,60 +777,66 @@
                                                     <form name="blah_blah">
                                                         <select class="form-control" name="ddmenu_name" id="ddmenu_name" style="width: 90% !important;" onChange="window.open(ddmenu_name.value,'newtab')">
                                                             <option value="first_option_name" selected>Выберите номер</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=22">2017, №22</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=21">2017, №21</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=20">2017, №20</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=19">2017, №19</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=18">2017, №18</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=17">2017, №17</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=16">2017, №16</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=15">2017, №15</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=14">2017, №14</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=13">2017, №13</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=12">2017, №12</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=11">2017, №11</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=10">2017, №10</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=9">2017, №09</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=8">2017, №08</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=7">2017, №07</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=6">2017, №06</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=5">2017, №05</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=4">2017, №04</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=3">2017, №03</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=2">2017, №02</option>
-                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=4&xf_2=1">2017, №01</option>
+                                                            <option value="https://agrarnik.com/index.php?option=com_jak2filter&view=itemlist&Itemid=434&xf_1=5&xf_2=1&limitstart=0">2018, №1</option>
                                                         </select>
                                                     </form>
                                                 </div>
                                             </div>
                                     <div class="wrapper">Читайте в свежем номер</div>
                                     <div class="row new-number">
-                                        <div class="col-sm-2 col-xs-4"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4699:%D0%BC%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D1%8C-%E2%80%93-%D0%B2-%D0%B5%D0%B6%D0%B5%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&Itemid=434"><img class="img-responsive" src="https://agrarnik.com/images/308/58/original_opt.jpeg" alt=""/></a></div>
-                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4699:%D0%BC%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D1%8C-%E2%80%93-%D0%B2-%D0%B5%D0%B6%D0%B5%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&Itemid=434">Морковь – в ежедневный рацион питания</a></div>
+                                        <div class="col-sm-2 col-xs-4"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4897:%D0%BD%D1%83%D1%82-300-000$-%D0%B7-100-%D0%B3%D0%B0-%D1%83-2017-%D1%80%D0%BE%D1%86%D1%96-%D1%85%D1%82%D0%BE-%D0%B1%D1%96%D0%BB%D1%8C%D1%88%D0%B5&Itemid=434"><img class="img-responsive" src="https://agrarnik.com/images/311/8/maier2_opt.jpeg" alt=""/></a></div>
+                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4897:%D0%BD%D1%83%D1%82-300-000$-%D0%B7-100-%D0%B3%D0%B0-%D1%83-2017-%D1%80%D0%BE%D1%86%D1%96-%D1%85%D1%82%D0%BE-%D0%B1%D1%96%D0%BB%D1%8C%D1%88%D0%B5&Itemid=434">НУТ: 300 000$ з 100 га у 2017 році! Хто більше?</a></div>
                                     </div>
                                     <div class="row new-number">
-                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/308/20/13-10-17-%D0%BF%D0%BE%D1%81%D1%96%D0%B2-%D0%BF%D1%88%D0%B5%D0%BD%D0%B8%D1%86%D1%96_opt.jpg" alt=""/></div>
-                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4698:%D1%83-%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D1%8B-%D0%BD%D0%B5%D1%82-%D0%BF%D0%BB%D0%BE%D1%85%D0%BE%D0%B9-%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D1%8B-%E2%80%93-9&Itemid=434">У Природы нет плохой погоды – 9</a></div>
+                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/10/%D0%A4%D0%BE%D1%82%D0%BE-%D0%9F%D0%9F-%D0%A1%D0%BA%D0%B8%D1%84_opt.jpg" alt=""/></div>
+                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4900:%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%B8-%D0%BA%D1%83%D0%BA%D1%83%D1%80%D1%83%D0%B4%D0%B7%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D1%96%D1%97-%C2%AB%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%C2%BB-%E2%80%93-%D1%96%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5-%D1%80%D1%96%D1%88%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B7%D0%BE%D0%BD%D0%B8-%D1%80%D0%B8%D0%B7%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5%D1%80%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B0&Itemid=434">Гібриди кукурудзи компанії «Селекта» – ідеальне рішення для зони ризикованого землеробства</a></div>
                                     </div>
 
                                     <div class="row new-number">
-                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/308/10/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%B0.png" alt=""></div>
-                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4697:%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%B0-%D0%BD%D0%B0-%D0%B2%D1%96%D0%BD%D0%BD%D0%B8%D1%87%D0%B8%D0%BD%D1%96&Itemid=434">Селекта на Вінничині</a></div>
+                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/73/%D0%92%D0%B0%D0%BB_%D1%81_%D0%BC%D1%83%D1%84%D1%82%D0%BE%D0%B9_fmt.png" alt=""></div>
+                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4911:%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BC%D1%83%D1%84%D1%82%D1%8B-%E2%80%93-%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D1%8F-%D0%B1%D0%B5%D0%B7%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BD%D0%BE%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&Itemid=434">Предохранительные муфты – гарантия безотказной работы оборудования</a></div>
                                     </div>
 
                                     <div class="row new-number">
-                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/297/Ashampoo_Snap_2017.06.19_10h36m37s_003_.jpg" alt=""></div>
-                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4230:%D0%B7%D0%B5%D1%80%D0%BD%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%B0%D1%80%D0%BA%D0%B0-%D0%BC%D0%BB%D0%B8%D0%BD-%D0%B7-%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%BC-%D0%BF%D0%BE%D0%B4%D1%80%D1%96%D0%B1%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F%D0%BC&Itemid=434">Зернодробарка-млин з регульованим подрібненням</a></div>
+                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/68/catalog_info_3_579_opt.jpeg" alt=""></div>
+                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4909:%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B0-%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0-%D0%B7-%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%BC%D0%B8-%D0%BC%D0%BE%D0%B6%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8F%D0%BC%D0%B8-%D0%B0%D0%B1%D0%BE-%D1%8F%D0%BA-%D0%BD%D0%B5-%D0%B2%D1%82%D1%80%D0%B0%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D1%96%D0%B4-3-%D1%82%D0%B8%D1%81-%D0%B3%D1%80%D0%BD-%D0%B7-%D0%B3%D0%B0&Itemid=434">Маленька машина з великими можливостями</a></div>
                                     </div>
 
                                     <div class="row new-number">
-                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/304/2/podsolnuh-30.jpg" alt=""></div>
-                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4520:%D1%87%D0%B0%D1%81-%D0%BE%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D0%B8-%D1%81%D0%BE%D0%BD%D1%8F%D1%88%D0%BD%D0%B8%D0%BA-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%B8-%D0%B2%D1%96%D0%B4-%D0%BF%D1%80%D0%B0%D1%82-%C2%AB%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0%C2%BB&Itemid=434">Час обирати соняшник: українські гібриди від ПРАТ «Селена»</a></div>
+                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/55/%D0%B3%D1%80%D0%B8%D1%84%D0%BE%D0%BD_%D1%88%D1%82%D1%80._opt.png" alt=""></div>
+                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4907:%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B0%D0%B3%D1%80%D0%B5%D0%B3%D0%B0%D1%82-%C2%AB%D0%B3%D1%80%D0%B8%D1%84%D0%BE%D0%BD%C2%BB&Itemid=434">Универсальный агрегат «Грифон»</a></div>
                                     </div>
 
+                                    <div class="row new-number">
+                                            <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/40/image007_opt.jpeg" alt=""></div>
+                                            <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4905:%D0%B2%D0%B2%D0%BE%D0%B4%D0%B8%D0%BC-%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5-%D0%B2-%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D1%8E&Itemid=434">Вводим заброшенное поле в эксплуатацию</a></div>
+                                        </div>
+
+
+                                        <div class="row new-number">
+                                                <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/31/image019_opt.jpeg" alt=""></div>
+                                                <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4904:%D0%BA%D0%BE%D1%80%D0%BC%D0%BE%D0%B0%D0%B3%D1%80%D0%B5%D0%B3%D0%B0%D1%82%D0%B8-%D0%B0%D0%BA%D0%B3%D1%81%D0%BC-%C2%AB%D0%BC%D1%80%D1%96%D1%8F%C2%BB-%D0%B4%D0%BB%D1%8F-%D0%BC%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D1%82%D0%B0%D0%B4%D0%B0-%D0%B2%D1%80%D1%85,-%D0%B2%D1%96%D0%B4%D0%B3%D0%BE%D0%B4%D1%96%D0%B2%D0%BB%D1%96-%D1%82%D0%B5%D0%BB%D1%8F%D1%82-%D1%82%D0%B0-%D1%81%D0%B2%D0%B8%D0%BD%D0%B5%D0%B9&Itemid=434">Кормоагрегати АКГСМ «Мрія» для молочного стада ВРХ, відгодівлі телят та свиней</a></div>
+                                            </div>
+
+
+                                            <div class="row new-number">
+                                                    <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/30/%D0%A0%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82_%D0%B4%D0%BE%D1%81%D0%BB%D1%96%D0%B4%D1%83__%D0%9F%D0%9F__opt.jpeg" alt=""></div>
+                                                    <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4903:%D0%BD%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%B2%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-%D0%BD%D0%B0%D0%BD%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B8%D0%B2-%C2%AB5-%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%C2%BB-%E2%80%93-%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D1%83-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8&Itemid=434">Національний виробник нанодобрив «5 елемент» – народу України</a></div>
+                                                </div>
+
+                                                <div class="row new-number">
+                                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/26/55253_4_opt.jpeg" alt=""></div>
+                                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4902:%D0%BD%D0%B8%D1%82%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B3%D1%80%D1%8F%D0%B7%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%BE%D0%B4%D0%BE%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B8-%D0%B2%D0%BE%D0%B4%D0%BE%D0%B5%D0%BC%D0%BE%D0%B2-%D0%B8-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B3%D1%83%D0%BC%D0%B0%D1%82%D0%B0-%D0%BA%D0%B0%D0%BB%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-%D1%83%D0%BB%D1%83%D1%87%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8-%D0%B2-%D0%BE%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%BE%D0%B9-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8&Itemid=434">Нитратное загрязнение водоисточников и водоемов и современные методы применения гумата калия для улучшения экологии в одесской области</a></div>
+                                                    </div>
+
+                                                    <div class="row new-number">
+                                                            <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/16/1504856258_340.jpg" alt=""></div>
+                                                            <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4901:%D1%81%D1%82%D1%96%D0%B9%D0%BA%D1%96-%D0%BE%D1%80%D1%96%D1%94%D0%BD%D1%82%D0%B8%D1%80%D0%B8-%D0%B2%D1%81%D0%B5%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BD%D0%B0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%96%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82%D1%83-%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%86%D1%96%D1%97&Itemid=434">Стійкі орієнтири Всеукраїнського наукового інституту селекції</a></div>
+                                                        </div>
+                                                            
                                     <div class="row new-number v1">
-                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/287/36/catalog_info_3_579_opt.jpeg" alt=""></div>
-                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=3796:%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B0-%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0-%D0%B7-%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%BC%D0%B8-%D0%BC%D0%BE%D0%B6%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8F%D0%BC%D0%B8&Itemid=434">Маленька машина з великими можливостями</a></div>
+                                        <div class="col-sm-2 col-xs-4"><img class="img-responsive" src="https://agrarnik.com/images/311/54/Untitled_1_opt.jpeg" alt=""></div>
+                                        <div class="col-sm-10 col-xs-8"><a href="https://agrarnik.com/index.php?option=com_k2&view=item&id=4906:%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D1%80%D1%8B%D1%85%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%C2%AB%D0%B3%D0%BE%D1%80%D1%8B%D0%BD%D1%8B%D1%87%C2%BB&Itemid=434">Глубокорыхлитель «Горыныч»</a></div>
                                     </div>
 
                                 </div>
@@ -830,7 +850,7 @@
                                     <div class="colontitul">
                                         <p class="name-rubrik">АгроСобытия</p>
                                         <div class="line"><img src="img/line.png" alt="line">
-                                            <p class="nomer">№20 (307)</p>
+                                            <p class="nomer">№21 (308)</p>
                                         </div>
                                         <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                     </div>
@@ -853,79 +873,79 @@
                                             <div class="col-sm-6"></div>
                                         </div>
                                         <div class="row new-number in-events">
-                                            <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=214:vistavka-vid-lanu-do-stolu&Itemid=454"><img class="img-responsive" src="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=233:mikrobni-preparati-iii-pokolinnya&Itemid=454" alt=""/></a></div>
+                                            <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=220:xv-mizhnarodna-agropromislova-vistavka-agroforum-2018&Itemid=454" target="blank"><img class="img-responsive" src="img/21/events/xv-mizhnarodna-agropromislova-vistavka-agroforum-2018.jpg" alt=""/></a></div>
                                             <div class="col-sm-10 col-xs-12">
                                                 <ul>
                                                     <li class="title-events">
-                                                        <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=214:vistavka-vid-lanu-do-stolu&Itemid=454">
-                                                        Виставка «Від лану до столу»</a></li>
-                                                        <li class="data-events">12.12.2017-13.12.2017</li>
-                                                        <li class="map">м. Миколаїв, вул. Спортивна, 9 </li>
+                                                        <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=220:xv-mizhnarodna-agropromislova-vistavka-agroforum-2018&Itemid=454" target="blank">
+                                                            XV Міжнародна агропромислова виставка "Агрофорум 2018"</a></li>
+                                                        <li class="data-events">06.02.2018</li>
+                                                        <li class="map">Міжнародний виставковий центр, Броварський проспект, 15, м. Київ, Україна</li>
                                                     </ul>
                                                 </div>
                                             </div>
 
                                             <div class="row new-number in-events">
                                                 <div class="col-sm-2 hidden-xs">
-                                                    <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=205:iii-forum-innovatsijno-tekhnologichnogo-riznomanittya-idej-ta-rishen-dlya-apk-smart-agro-forum-3&Itemid=454"><img class="img-responsive" src="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=226:outdoor-trade-show-spring&Itemid=454" alt=""></a></div>
+                                                    <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=232:agrotekhservis-2018&Itemid=454" target="blank"><img class="img-responsive" src="img/21/events/agrotekhservis-2018.jpg" alt=""></a></div>
                                                     <div class="col-sm-10 col-xs-12">
                                                         <ul>
-                                                            <li class="title-events"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=205:iii-forum-innovatsijno-tekhnologichnogo-riznomanittya-idej-ta-rishen-dlya-apk-smart-agro-forum-3&Itemid=454">ІІІ - форум інноваційно- технологічного різноманіття ідей та рішень для АПК - Smart Agro Forum №3</a></li>
-                                                            <li class="data-events">13.12.2017</li>
-                                                            <li class="map">Київ, вул. Дорогожицька,1</li>
+                                                            <li class="title-events"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=232:agrotekhservis-2018&Itemid=454" target="blank">«АгроТехСервіс - 2018»</a></li>
+                                                            <li class="data-events">13.02.2018 - 15.02.2018</li>
+                                                            <li class="map">Запоріжжя, Виставковий комплекс «Козак-Палац» (вул. Перемоги, 70-б)</li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <div class="row new-number in-events">
                                                     <div class="col-sm-2 hidden-xs">
-                                                        <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=202:17-ta-agropromislova-spetsializovana-vistavka-dlya-agrarnogo-biznesu-agrotekhservis-2018&Itemid=454">
-                                                            <img class="img-responsive" src="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=220:xv-mizhnarodna-agropromislova-vistavka-agroforum-2018&Itemid=454" alt=""></a>
+                                                        <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=239:prisadibne-gospodarstvo-2018&Itemid=454" target="blank">
+                                                            <img class="img-responsive" src="img/21/events/prisadibne-gospodarstvo-2018.jpg" alt=""></a>
                                                         </div>
                                                         <div class="col-sm-10 col-xs-12">
                                                             <ul>
                                                                 <li class="title-events">
-                                                                    <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=202:17-ta-agropromislova-spetsializovana-vistavka-dlya-agrarnogo-biznesu-agrotekhservis-2018&Itemid=454">17-та агропромислова спеціалізована виставка для аграрного бізнесу «АгроТехСервіс – 2018»</a>
+                                                                    <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=239:prisadibne-gospodarstvo-2018&Itemid=454" target="blank">«Присадибне господарство – 2018»</a>
                                                                 </li>
-                                                                <li class="data-events">13.02.2018 - 15.02.2018</li>
-                                                                <li class="map">м. Запоріжжя, Виставковий комплекс «Козак-Палац» (вул. Перемоги, 70-б) </li>
+                                                                <li class="data-events">14.02.2018 - 17.02.2018</li>
+                                                                <li class="map">Винница, вул. Соборна, 68, оф. 201</li>
                                                             </ul>
                                                         </div>
                                                     </div>
 
                                                     <div class="row new-number in-events">
-                                                        <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=215:17-natsionalna-vistavka-agrotekhnologij-agroprom&Itemid=454"><img class="img-responsive" src="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=221:104-ya-bitva-startapov&Itemid=454" alt=""></a></div>
+                                                        <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=230:suchasne-teplichne-gospodarstvo-2018&Itemid=454 target="blank""><img class="img-responsive" src="img/21/events/suchasne-teplichne-gospodarstvo-2018.jpg" alt=""></a></div>
                                                         <div class="col-sm-10 col-xs-12">
                                                             <ul>
-                                                                <li class="title-events"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=215:17-natsionalna-vistavka-agrotekhnologij-agroprom&Itemid=454">17 Національна виставка агротехнологій «Агропром»</a></li>
-                                                                <li class="data-events">28.02.2018 13:43 -02.03.2018 13:43</li>
-                                                                <li class="map">г. Днепр </li>
+                                                                <li class="title-events"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=230:suchasne-teplichne-gospodarstvo-2018&Itemid=454" target="blank">«Сучасне тепличне господарство – 2018»</a></li>
+                                                                <li class="data-events">15.02.2018</li>
+                                                                <li class="map"> м. Енергодар, вул. Центральна ,6 , культурно-діловий центр “Молодіжний»</li>
                                                             </ul>
                                                         </div>
                                                     </div>
 
                                                     <div class="row new-number in-events">
-                                                        <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=136:konferentsiya-z-bioenergetiki-bio-energy-ukraine-2017&Itemid=454">
+                                                        <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=249:iii-kruglij-stil-maksimalna-efektivnist-ta-ekonomiya-pri-vibori-elevatornogo-obladnannya&Itemid=454" target="blank">
                                                             <img class="img-responsive" src="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=136:konferentsiya-z-bioenergetiki-bio-energy-ukraine-2017&Itemid=454" alt=""></a>
                                                         </div>
                                                         <div class="col-sm-10 col-xs-12">
                                                             <ul>
                                                                 <li class="title-events">
-                                                                    <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=136:konferentsiya-z-bioenergetiki-bio-energy-ukraine-2017&Itemid=454">Конференція з біоенергетики «Bio Energy Ukraine 2017»</a></li>
-                                                                    <li class="data-events">13.03.2018</li>
-                                                                    <li class="map">Торгово-Промислова Палата, м.Київ, вул.Велика Житомирська, 33 </li>
+                                                                    <a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=249:iii-kruglij-stil-maksimalna-efektivnist-ta-ekonomiya-pri-vibori-elevatornogo-obladnannya&Itemid=454" target="blank">III Круглий стіл «Максимальна ефективність та економія при виборі елеваторного обладнання»</a></li>
+                                                                    <li class="data-events">15.02.2018</li>
+                                                                    <li class="map">Конференц-зал Мандарин Плаза: Україна, Київ, вул. Бассейная, 6, 8 поверх</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
 
                                                         <div class="row new-number v1 in-events">
-                                                            <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=183:konferentsiya-milk-processing-2018&Itemid=454"><img class="img-responsive" src="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=183:konferentsiya-milk-processing-2018&Itemid=454" alt="">
+                                                            <div class="col-sm-2 hidden-xs"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=221:104-ya-bitva-startapov&Itemid=454" target="blank"><img class="img-responsive" src="img/21/events/104-ya-bitva-startapov.jpg" alt="">
                                                             </a></div>
                                                             <div class="col-sm-10 col-xs-12">
                                                                 <ul>
-                                                                    <li class="title-events"><a href="https://agrarnik.com/index.php?option=com_rseventspro&task=image&id=183:konferentsiya-milk-processing-2018&Itemid=454">Конференція Milk processing 2018</a></li>
-                                                                    <li class="data-events">17.05.2018 - 18.05.2018</li>
-                                                                    <li class="map">проспект Перемоги, 40, Київ, 02000, ВЦ «АККО Інтернешнл»</li>
+                                                                    <li class="title-events"><a href="https://agrarnik.com/index.php?option=com_rseventspro&layout=show&id=221:104-ya-bitva-startapov&Itemid=454" target="blank">104-я Битва Стартапов</a></li>
+                                                                    <li class="data-events">15.02.2018</li>
+                                                                    <li class="map">г. Киев, Ярославский переулок, 1/3, HUB 4.0.</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -937,7 +957,7 @@
                                                         <div class="colontitul">
                                                             <p class="name-rubrik">Агрообзор</p>
                                                             <div class="line"><img src="img/line.png" alt="line">
-                                                            <p class="nomer">№20 (307)</p>
+                                                            <p class="nomer">№21 (308)</p>
                                                         </div>
                                                             <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                         </div>
@@ -954,42 +974,42 @@
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/slg/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/1.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/slg/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/1.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/slg/" target="_blank">Двойная регистрация аренды земли: как снять проблему и уменьшить рейдерство</a></div>
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/cky/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/2.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/cky/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/2.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/cky/" target="_blank" rel="nofollow">Немножко припахали, или Предел ответственности за самовольное занятие земельного участка</a></div>
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/frt/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/3.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/frt/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/3.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/frt/" target="_blank" rel="nofollow">Инновационные перспективы внесения СЗР</a></div>
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/ney/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/4.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/ney/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/4.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/ney/" target="_blank" rel="nofollow">Готуй сані восени, або як забезпечити успішну перезимівлю озимих</a></div>
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/hmb/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/5.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/hmb/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/5.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/hmb/" target="_blank" rel="nofollow">Проблемний AgTech: що заважає з’являтись новим технологіям у агросекторі</a></div>
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/sjy/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/6.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/sjy/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/6.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/sjy/" target="_blank" rel="nofollow">К чему готовиться аграриям в 2018 году – интервью с заместителем главы аграрного Комитета ВР А.Бакуменко</a></div>
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/dkj-4/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/7.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/dkj-4/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/7.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/dkj-4/" target="_blank" rel="nofollow">Потрапити на полицю: на яких умовах мережі працюють з фермерами</a></div>
                                                             </div>
 
                                                             <div class="row v1">
-                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/dlu/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/agroobzor/8.jpg" alt="фото на агрообзор"></a></div>
+                                                                <div class="col-sm-2 hidden-xs"><a href="http://site.agrarnik.com/dlu/" target="_blank" rel="nofollow"><img class="img-responsive" src="img/20/agroobzor/8.jpg" alt="фото на агрообзор"></a></div>
                                                                 <div class="col-sm-10 col-xs-12"><a href="http://site.agrarnik.com/dlu/" target="_blank" rel="nofollow">100 грамів кисло-солодкого, або Про плюси й мінуси нового винного законопроекту для галузі</a></div>
                                                             </div>
                                                         </div>
@@ -1002,7 +1022,7 @@
                                                             <div class="colontitul">
                                                                 <p class="name-rubrik">Видеообзор</p>
                                                                 <div class="line"><img src="img/line.png" alt="line">
-                                                                <p class="nomer">№20 (307)</p>
+                                                                <p class="nomer">№21 (308)</p>
                                                             </div>
                                                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                             </div>
@@ -1065,7 +1085,7 @@
                                                             <div class="colontitul">
                                                                 <p class="name-rubrik">Страница читателя</p>
                                                                 <div class="line"><img src="img/line.png" alt="line">
-                                                                <p class="nomer">№20 (307)</p>
+                                                                <p class="nomer">№21 (308)</p>
                                                             </div>
                                                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                             </div>
@@ -1110,7 +1130,7 @@
                                                     <div class="colontitul">
                                                         <p class="name-rubrik">Агровопрос</p>
                                                         <div class="line"><img src="img/line.png" alt="line">
-                                                        <p class="nomer">№20 (307)</p>
+                                                        <p class="nomer">№21 (308)</p>
                                                     </div>
                                                         <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                                     </div>
@@ -1171,7 +1191,7 @@
                                             <div class="colontitul">
                                                 <p class="name-rubrik">Навигация</p>
                                                 <div class="line"><img src="img/line.png" alt="line"></div>
-                                                <p class="nomer">№20 (307)</p>
+                                                <p class="nomer">№21 (308)</p>
                                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                             </div>
                                             <div id="new1"><img class="img-responsive" src="" alt=""></div>
@@ -1183,7 +1203,7 @@
                                             <div class="colontitul">
                                                 <p class="name-rubrik">Наши контакты</p>
                                                 <div class="line"><img src="img/line.png" alt="line">
-                                                <p class="nomer">№20 (307)</p>
+                                                <p class="nomer">№21 (308)</p>
                                             </div>
                                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                             </div>
@@ -1214,7 +1234,7 @@
                                                     <div class="col-sm-6">
                                                         <!-- Форма обратной связи -->
                                                         <div class="bg-contacts text-left">
-                                                            <form id="mail-form" method="post">
+                                                            <form id="mail-form" action="mail.php" method="post">
 
                                                             <!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="Интерактивный номер газеты АграрНик">
@@ -1265,7 +1285,7 @@
                                             <div class="colontitul">
                                                 <p class="name-rubrik">Конкурс</p>
                                                 <div class="line"><img src="img/line.png" alt="line"></div>
-                                                <p class="nomer">№20 (307)</p>
+                                                <p class="nomer">№21 (308)</p>
                                                 <img class="logo-nomer img-responsive" src="img/logo-wp.svg" alt="Логотип">
                                             </div>
                                             <div id="new1"><img class="img-responsive" src="" alt=""></div>
@@ -1281,7 +1301,7 @@
 <h3 style="margin-top:30px;">Для получения прайса <br>оставьте свой email</h3>
 			<!-- Форма обратной связи с POPUp -->
             <div class="bg-contacts text-left">
-                    <form id="mail-form" method="post">
+                    <form id="mail-form1" action="mail-popup.php" method="post">
                     <!-- Hidden Required Fields -->
 <input type="hidden" name="project_name" value="Интерактивный номер газеты АграрНик">
 <input type="hidden" name="admin_email" value="vitokud1@gmail.com">
@@ -1307,17 +1327,17 @@
 </div>
 </form>
 </div>
-
 			<button class="close1" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
 		</div>
     </div>
     
-<!-- CSS theme files
-	============================================ -->
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- preloader -->
+    <div class="loader">
+            <div class="loader_inner"></div>
+        </div>
+
+
+
 <!-- JS Libs & Plugins
   ============================================ -->
     <script src="js/scripts.min.js"></script>
@@ -1328,5 +1348,6 @@
     defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeY6EGwvbgSkmvgWAC92PsN_ORiMCIE74&callback=initMap"></script>
     <!-- JS theme files
   ============================================ -->
+ 
                 </body>
                 </html>

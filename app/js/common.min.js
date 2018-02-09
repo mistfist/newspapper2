@@ -1,5 +1,7 @@
 $(function() {
 
+
+//Banner or arrow back to top
 // $(window).scroll(function(){ 
 //   if($(window).scrollTop()>1500){ 
 //     $('.post').show() 
@@ -24,6 +26,23 @@ $(function() {
 		return false;
 	});
 
+	//E-mail Ajax Send POPup
+	$("#mail-form1").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail-popup.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо, Ваше сообщение отправлено!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
 // Модальное окно
 	$(function() {
 	    // Проверяем запись в куках о посещении
@@ -31,7 +50,7 @@ $(function() {
 	    //if (!$.cookie('hideModal')) {
 	   // если cookie не установлено появится окно
 	   // с задержкой 5 секунд
-	    var delay_popup = 5000;
+	    var delay_popup = 10000;
 	    setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
 	    // }
 	    // Запоминаем в куках, что посетитель уже заходил
@@ -42,29 +61,14 @@ $(function() {
 	    // });
 	});
 
+	// preloader
+	$(document).ready(function() {
+        $(".loader_inner").fadeOut();
+        $(".loader").delay(400).fadeOut("slow");
+    });
 
-// 	$(document).ready(function() {
-// 		$("#a1").animated("zoomInUp", "zoomOutDown");
-// 		$("#a2").animated("zoomInUp", "zoomOutDown");
-// 		$("#a3").animated("zoomInUp", "zoomOutDown");
-// 		$("#a4").animated("zoomInUp", "zoomOutDown");
-// 		$("#a5").animated("zoomInUp", "zoomOutDown");
-// 	});
-	
-// 	//Animate CSS + WayPoints javaScript Plugin
-// 	//Example: $(".element").animated("zoomInUp", "zoomOutDown");
-// 	//Author URL: http://webdesign-master.ru
-// 	(function($) {
-// 		$.fn.animated = function(inEffect, outEffect) {
-// 				$(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
-// 						if (dir === "down") {
-// 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
-// 						};
-// 				}, {
-// 						offset: "90%"
-// 				});
-// 		};
-// 	})(jQuery);
+
+
 });
 
 function initMap() {
@@ -81,3 +85,4 @@ function initMap() {
 	  icon: 'img/map-marker.png'
   });
 }
+
