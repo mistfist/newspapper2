@@ -28,6 +28,9 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		// 'app/libs/bootstrap/javascripts/bootstrap/affix.js',
+		'app/libs/bootstrap/javascripts/bootstrap/scrollspy.js',
+		// 'app/libs/jquery.cookie/jquery.cookie.min.js',//for modal windows
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

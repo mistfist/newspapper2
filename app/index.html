@@ -22,63 +22,15 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
     
     <!-- CSS theme files
 	============================================ -->
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
 
-<style>
-    /* mobile menu */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-	opacity: 0;
-	transform: rotate(0deg) scale(0.2, 0.2);
-}
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-	opacity: 1;
-	transform: rotate(-45deg) translate(0, -1px);
-}
-#menuToggle input:checked ~ ul
-{
-	transform: scale(1.0, 1.0);
-	opacity: 1;
-}
-
-
-.loader {
-	background: none repeat scroll 0 0 #ffffff;
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-}
-.loader_inner {
-	background-image: url("img/preloader.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #fff;
-	height: 60px;
-	width: 60px;
-	margin-top: -30px;
-	margin-left: -30px;
-	left: 50%;
-	top: 50%;
-	position: absolute;
-}
-</style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
@@ -123,7 +75,6 @@
         <div class="row">
             <nav class="col-md-3 hidden-xs hidden-sm" id="myScrollspy">
                 <ul class="nav nav-pills nav-stacked">
-                    <!-- <p class="content-nav">Содержание</p> -->
                     <img class="logo-main img-responsive" src="img/logo.svg" alt="логотип">
                     <span>ЭЛЕКТРОННАЯ ВЕРСИЯ</span>
                     <li class="active"><a class="category" href="#tovar">ТОВАРЫ, УСЛУГИ</a></li>
@@ -146,14 +97,11 @@
                     <li><a class="reader" href="#reader">ЧИТАТЕЛЮ</a></li>
                     <li><a href="#reader-page">Страница читателя</a></li>
                     <li><a href="#agrovopros">АгроВопрос</a></li>
-                    <!-- <li><a href="#navigation">Навигация по номеру</a></li> -->
                     <li><a href="#contacts">Наши контакты</a></li>
-                    <!-- <p class="name-nav">Навигация по номеру</p> -->
-                    <!-- <li><a href="#conkurs">Конкурс для читателей</a></li> -->
                     </ul>
                 </nav>
                 <div class="col-md-9 col-sm-12 col-xs-12 wrapper-np text-center">
-                        <ul class="last-list">
+                        <ul class="last-list hidden-xs">
                                 <li><a href="https://agrarnik.com/" title="Перейти на сайт" target="_blank"><i class="fa fa-reply"></i></a></li>
                                 <li><a href="https://agrarnik.com/web/viewer.html?file=agrarnik20_interactiv.pdf" title="скачать PDF" target="_blank"><i class="fa fa-download"></i></a></li>
                                 <li><a href="https://agrarnik.com/index.php?option=com_sppagebuilder&view=page&id=7&Itemid=433" title="Посмотреть архив номеров" target="_blank"><i class="fa fa-file-text"></i></a></li>
@@ -189,7 +137,7 @@
 <!-- <div class="wrapper-banner visible-lg">
 <a href="https://agrarnik.com/"><img class="banner-block" src="img/banner/1.jpg" alt="кукурузы F1"/></a>
 </div> -->
-<!--Баннер для семян финиш-->
+
 
                                 <img class="img-responsive" src="img/21/semena/agrarnik1_interactiv2.jpg" alt="">
                             </div>
@@ -1153,7 +1101,7 @@
                                                                     </select>
                                                                 </form>
                                                             </div>
-                                                            <div class="col-sm-6"><img class="logo-agro bounceOut" src="img/image-logo.png"></div>
+                                                            <div class="col-sm-6"><img class="logo-agro" src="img/image-logo.png"></div>
                                                             <div class="row agro-link">
                                                                 <div class="col-sm-12">
                                                                     <ul>
@@ -1243,7 +1191,7 @@
 		<!-- END Hidden Required Fields -->
                                                                 <div class="form-group has-success has-feedback">
                                                                   <div class="input-group">
-                                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                                                     <input type="text" class="form-control" name="Имя" id="InputName" placeholder="Введите Имя">
                                                                 </div>
                                                             </div>
@@ -1309,7 +1257,7 @@
 <!-- END Hidden Required Fields -->
                         <div class="form-group has-success has-feedback">
                           <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             <input type="text" class="form-control" name="Имя" id="InputName" placeholder="Введите Имя">
                         </div>
                     </div>
@@ -1336,18 +1284,12 @@
             <div class="loader_inner"></div>
         </div>
 
-
-
 <!-- JS Libs & Plugins
   ============================================ -->
     <script src="js/scripts.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="libs/waypoint.js"></script>
     <script async 
     defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeY6EGwvbgSkmvgWAC92PsN_ORiMCIE74&callback=initMap"></script>
     <!-- JS theme files
   ============================================ -->
- 
                 </body>
                 </html>
