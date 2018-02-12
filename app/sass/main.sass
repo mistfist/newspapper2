@@ -44,15 +44,9 @@ a
 	font-size: 16px
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
 	font-family: $default-font !important
 	overflow-x: hidden
-	opacity: 1
-	background-color: #424242 !important
-	background: url(http://192.168.1.116:3000/img/bg-wrapper.jpg)
+	background: url(../img/bg-wrapper.jpg)
 	background-repeat: no-repeat
 	background-attachment: fixed
 	height: 100%
@@ -149,10 +143,15 @@ hr.style14
 			opacity: 0.8
 
 
-.wrapper-np img
-	display: inline-block
+.wrapper-np
+	h2
+		text-transform: uppercase
+		letter-spacing: 2px
+	img
+		display: inline-block
 
 #semena
+	margin-top: 30px
 	h2
 		color: #a5e174
 
@@ -709,6 +708,8 @@ select#ddmenu_name
 	right: 0
 	z-index: 9999
 	display: none
+	.logo-nomer
+		width: 180px
 
 #price
 	.col-sm-1
